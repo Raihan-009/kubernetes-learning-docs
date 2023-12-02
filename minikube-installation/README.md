@@ -28,3 +28,49 @@ Minikube is one node cluster where master process and worker processes both run 
 The minikube architecture -->
 
 <img src="https://github.com/Raihan-009/kubernetes-developments/blob/main/minikube-installation/architecture/minikube-architecture.png" alt="Minikube Arch" width="50%"/>
+
+## Lets dive into the installation process
+
+For official docs you can [click here](https://minikube.sigs.k8s.io/docs/start/).
+
+To get host's architecture, run
+```
+uname -m
+```
+To install the latest minikube stable release on x86-64 Linux using binary download:
+```
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+sudo install minikube-linux-amd64 /usr/local/bin/minikube
+```
+Now, in order to start cluster, from a terminal with administrator access (but not logged in as root), run:
+```
+minikube start
+```
+Let's see now...
+![minikube failed](https://github.com/Raihan-009/kubernetes-developments/blob/main/minikube-installation/examples/minikube-failed.png)
+
+Oppss!!... It seems minikube fails to start. It's likely a problem with the underlying virtualization or container runtime that Minikube is using. So we need to explicitly specify the driver when starting Minikube to ensure that it uses the correct one.
+
+Run
+```
+minikube start --driver=docker
+```
+The Docker driver allows you to install Kubernetes into an existing Docker install. For more [click here](https://minikube.sigs.k8s.io/docs/drivers/).
+
+Lets see what is going on now...
+![permission denied](https://github.com/Raihan-009/kubernetes-developments/blob/main/minikube-installation/examples/requires-driver.png)
+
+Ummmmm.... It's likely related to the user's permissions to access the Docker daemon socket. By default, Docker requires elevated privileges, and using sudo is a common approach. However, we can also configure Docker to allow our user account to access the Docker daemon without using sudo.
+
+Run
+```
+sudo usermod -aG docker $USER and newgrp docker
+minikube start --driver=docker
+```
+
+![start](https://github.com/Raihan-009/kubernetes-developments/blob/main/minikube-installation/examples/usermod-and-minikube-start.png)
+
+Yes! Now everything is good, this will take few minutes to start the cluster and we can check the status running
+```
+minikube status
+```
