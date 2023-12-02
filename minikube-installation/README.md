@@ -74,3 +74,14 @@ Yes! Now everything is good, this will take few minutes to start the cluster and
 ```
 minikube status
 ```
+
+![minikube status](https://github.com/Raihan-009/kubernetes-developments/blob/main/minikube-installation/examples/minikube-status.png)
+
+To stop minikube, run
+```
+minikube stop
+minikube status
+```
+
+![minikube stop](https://github.com/Raihan-009/kubernetes-developments/blob/main/minikube-installation/examples/minikube-stop-and-status.png)
+
