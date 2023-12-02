@@ -21,7 +21,7 @@ A <span style="color: green;">**Cluster**</span> is  a set of nodes grouped toge
 ![worker-master](https://github.com/Raihan-009/kubernetes-developments/blob/main/minikube-installation/architecture/master-worker-node.png)
 
 
-## Then what does minikube do?
+## Then, what does Minikube do??
 
 Minikube is one node cluster where master process and worker processes both run on one physical or virtual machine, including pre-install Docker.
 
@@ -29,7 +29,7 @@ The minikube architecture -->
 
 ![minikube arch](https://github.com/Raihan-009/kubernetes-developments/blob/main/minikube-installation/architecture/minikube-architecture.png)
 
-## Lets dive into the installation process
+## Let's dive into the installation process.
 
 For official docs you can [click here](https://minikube.sigs.k8s.io/docs/start/).
 
