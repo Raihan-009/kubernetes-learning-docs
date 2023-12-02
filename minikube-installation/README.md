@@ -27,4 +27,4 @@ Minikube is one node cluster where master process and worker processes both run 
 
 The minikube architecture -->
 
-![minikube](https://github.com/Raihan-009/kubernetes-developments/blob/main/minikube-installation/architecture/minikube-architecture.png)
+<img src="https://github.com/Raihan-009/kubernetes-developments/blob/main/minikube-installation/architecture/minikube-architecture.png" alt="Minikube Arch" width="50%"/>
