@@ -38,12 +38,16 @@ To check version of docker, run
 docker --version
 ```
 
+![version](https://github.com/Raihan-009/kubernetes-developments/blob/main/k3s-installation/examples/versions.png)
+
 
 ### K3d installation
 Install current latest release using `curl`
 ```bash
 curl -s https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh | bash
 ```
+
+![installing k3d](https://github.com/Raihan-009/kubernetes-developments/blob/main/k3s-installation/examples/k3d-installation.png)
 
 ## Creating the K3s cluster
 ```bash
@@ -59,3 +63,5 @@ Here, we are creating a k3d cluster named "matrix" with the following specificat
 - --agents 2: Specifies the number of agent nodes (or worker nodes) in the cluster. In this case, it's set to 2, meaning there are two agent nodes.
 
 - --port "30500-31000:30500-31000@server:0": Exposes the port range 30500-31000 on the host and forwards it to the same port range on the first server node (server:0).
+
+![cluster creating](https://github.com/Raihan-009/kubernetes-developments/blob/main/k3s-installation/examples/cluster-created.png)
