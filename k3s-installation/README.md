@@ -10,6 +10,8 @@ k3s is a lightweight and efficient Kubernetes distribution designed for resource
 
 ## Single-server setup
 
+![single server setup](https://github.com/Raihan-009/kubernetes-developments/blob/main/k3s-installation/architecture/single-server-setup.png)
+
 ## Why k3d?
 k3d is a convenient tool for deploying and managing k3s clusters within Docker containers. K3d makes it very easy to create single and multi-node k3s clusters in docker, e.g. for local development on Kubernetes.
 
