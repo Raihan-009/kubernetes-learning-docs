@@ -104,6 +104,7 @@ docker exec -it k3d-matrix-agent-1 /bin/sh
 ![agent-0](https://github.com/Raihan-009/kubernetes-developments/blob/main/k3s-installation/examples/agent-1.png)
 
 Now we are ready to perform k8s operations with k3s. Lets have a look to namespaces and pods.
+
 ![k8s-stuff](https://github.com/Raihan-009/kubernetes-developments/blob/main/k3s-installation/examples/kubectl-stuff.png)
 
 To stop a k3d cluster, run
