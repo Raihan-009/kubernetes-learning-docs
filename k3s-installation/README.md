@@ -65,3 +65,22 @@ Here, we are creating a k3d cluster named "matrix" with the following specificat
 - --port "30500-31000:30500-31000@server:0": Exposes the port range 30500-31000 on the host and forwards it to the same port range on the first server node (server:0).
 
 ![cluster creating](https://github.com/Raihan-009/kubernetes-developments/blob/main/k3s-installation/examples/cluster-created.png)
+
+To check cluster list, run
+```bash
+k3d cluster list
+```
+![cluster list](https://github.com/Raihan-009/kubernetes-developments/blob/main/k3s-installation/examples/cluster-list.png)
+
+We can check the cluster-info, run
+```bash
+kubectl cluster-info
+```
+
+![cluster-info](https://github.com/Raihan-009/kubernetes-developments/blob/main/k3s-installation/examples/cluster-info.png)
+
+To check all the nodes, run
+```bash
+kubectl get nodes
+```
+![cluster-info](https://github.com/Raihan-009/kubernetes-developments/blob/main/k3s-installation/examples/nodes.png)
