@@ -84,3 +84,21 @@ To check all the nodes, run
 kubectl get nodes
 ```
 ![cluster-info](https://github.com/Raihan-009/kubernetes-developments/blob/main/k3s-installation/examples/nodes.png)
+
+We can access the individual nodes using the Docker CLI. For example, to access the cluster node, run:
+```bash
+docker exec -it k3d-master-server-0 /bin/sh
+```
+![master-server](https://github.com/Raihan-009/kubernetes-developments/blob/main/k3s-installation/examples/master-server.png)
+
+To access the first agent node, run:
+```bash
+docker exec -it k3d-matrix-agent-0 /bin/sh
+```
+![agent-0](https://github.com/Raihan-009/kubernetes-developments/blob/main/k3s-installation/examples/agent-0.png)
+
+To access the second agent node, run:
+```bash
+docker exec -it k3d-matrix-agent-1 /bin/sh
+```
+![agent-0](https://github.com/Raihan-009/kubernetes-developments/blob/main/k3s-installation/examples/agent-1.png)
