@@ -58,7 +58,7 @@ Created time: March 26, 2024 11:21 AM
     ```
     
 
-![traefik-installation.png](Traefik-Ingress-Setup%20035439808d6d49eab826a423565c0be9/traefik-installation.png)
+![traefik-installation.png](https://github.com/Raihan-009/kubernetes-learning-docs/blob/main/traefik-installtion/images/traefik-installation.png?raw=true)
 
 ## Step 2.1: Finding args of traefik pod
 
@@ -74,7 +74,7 @@ Created time: March 26, 2024 11:21 AM
     kubectl describe pod traefik-cb6c6f8c7-5v2n2  
     ```
     
-    ![arguments.png](Traefik-Ingress-Setup%20035439808d6d49eab826a423565c0be9/arguments.png)
+    ![arguments.png](https://github.com/Raihan-009/kubernetes-learning-docs/blob/main/traefik-installtion/images/arguments.png?raw=true)
     
     - `click`
         1. **`-entrypoints.metrics.address=:9100/tcp`**: This specifies the address for the metrics entrypoint, typically used by Prometheus for scraping metrics.
@@ -92,7 +92,7 @@ Created time: March 26, 2024 11:21 AM
     
 2. Accessing dashboard from browser
     
-    ![dashboard.png](Traefik-Ingress-Setup%20035439808d6d49eab826a423565c0be9/dashboard.png)
+    ![dashboard.png](https://github.com/Raihan-009/kubernetes-learning-docs/blob/main/traefik-installtion/images/dashboard.png?raw=true)
     
 3. For the http entrypoint [ http traffic to ingress controller ]
     
@@ -102,7 +102,7 @@ Created time: March 26, 2024 11:21 AM
     
 4. Accessing from local browser
     
-    ![http-traffic.png](Traefik-Ingress-Setup%20035439808d6d49eab826a423565c0be9/http-traffic.png)
+    ![http-traffic.png](https://github.com/Raihan-009/kubernetes-learning-docs/blob/main/traefik-installtion/images/http-traffic.png?raw=true)
     
 
 > Now, we need to set an ingress configuration which will be used to route HTTP traffic to a backend service.
@@ -132,4 +132,4 @@ Created time: March 26, 2024 11:21 AM
 
 1. Now again, accessing from browser
     
-    ![nginx-8001.png](Traefik-Ingress-Setup%20035439808d6d49eab826a423565c0be9/nginx-8001.png)
+    ![nginx-8001.png](https://github.com/Raihan-009/kubernetes-learning-docs/blob/main/traefik-installtion/images/nginx-8001.png?raw=true)
